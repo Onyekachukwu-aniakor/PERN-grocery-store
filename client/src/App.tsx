@@ -22,6 +22,7 @@ import AdminDeliveryPartners from './pages/admin/AdminDeliveryPartners'
 import DeliveryLayout from './pages/delivery/DeliveryLayout'
 import DeliveryDashboard from './pages/delivery/DeliveryDashboard'
 import DeliveryLogin from './pages/delivery/DeliveryLogin'
+import CheckOut from './pages/Checkout'
 
 const App = () => {
   return (
