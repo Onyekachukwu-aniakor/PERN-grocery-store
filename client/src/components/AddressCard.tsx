@@ -9,7 +9,7 @@ interface AddressCardProps{
 
 }
 
-const AddressCard = ({addr, onEditHandler, setAddresses} : AddressCardProps) => {
+const AddressCard = ({addr, onEditHandler} : AddressCardProps) => {
     const handleDelete = async (id:string) =>{
         console.log(id);   
     }

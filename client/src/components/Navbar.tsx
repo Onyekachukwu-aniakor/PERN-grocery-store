@@ -24,11 +24,11 @@ const Navbar = () => {
 
         };
 
-        const handleLogout = ()=>{
+        /* const handleLogout = ()=>{
             logout()
             setUserMenuOpen(false);
             navigate('/');
-        }
+        } */
   return (
     <nav className='sticky bg-white top-0 z-50 border-b border-app-border'>
         <div className="max-w-7xl mx-auto px-2 sm:px-5 lg:px-4 flex items-center justify-between h-16 gap-4">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import type { Product } from '../types';
 import { categoriesData, dummyProducts } from '../assets/assets';
@@ -33,7 +33,8 @@ setSearchParams([["tab", "1"]]);
 setSearchParams(new URLSearchParams("?tab=1"));*/
   const [searchParams, setSearchParams]=useSearchParams();
   const [products, setProducts] = useState<Product[]>([]);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages] = useState(1);
+  //const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
   const [mobileFilterOpen, setMobileFilterOpen]= useState(false);
 

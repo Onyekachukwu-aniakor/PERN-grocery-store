@@ -1,5 +1,5 @@
 import { Truck,  XIcon, ZapIcon } from 'lucide-react';
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
 const Banner = () => {
     const [bannerVisible, setBannerVisible] =useState(()=>{

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import type { Order } from '../types';
 import {  dummyDashboardOrdersData } from '../assets/assets';
@@ -15,7 +15,8 @@ const OrderTracking = () => {
   const [order, setOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(true)
   //lat == latitude, lng= longitude
-  const [liveLocation, setLiveLocation] = useState<{lat:number, lng: number} | null>(null);
+  //const [liveLocation, setLiveLocation] = useState<{lat:number, lng: number} | null>(null);
+  const [liveLocation] = useState<{lat:number, lng: number} | null>(null);
   const currency = import.meta.env.VITE_CURRENCY_SYMBOL || '£';
 
   useEffect(()=>{
