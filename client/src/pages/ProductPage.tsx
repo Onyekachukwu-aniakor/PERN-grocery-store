@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link, Links, useNavigate, useParams } from 'react-router-dom';
+import { Link,  useNavigate, useParams } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import type { Product } from '../types';
 import { dummyProducts } from '../assets/assets';
 import Loading from '../components/Loading';
-import { ApertureIcon, ArrowLeftIcon, ArrowRightIcon, ArrowUpRightIcon, BookMarkedIcon, HomeIcon, LeafIcon, MarsStrokeIcon, MinusIcon, PlusIcon, ShoppingCartIcon, StarIcon } from 'lucide-react';
-import DummyReviewsSection from '../assets/DummyReviewsSection';
+import {  ArrowLeftIcon,  ArrowUpRightIcon, HomeIcon, LeafIcon, MinusIcon, PlusIcon, ShoppingCartIcon, StarIcon } from 'lucide-react';
+//import DummyReviewsSection from '../assets/DummyReviewsSection';
 import ProductCard from '../components/Home/ProductCard';
 
 const ProductPage = () => {

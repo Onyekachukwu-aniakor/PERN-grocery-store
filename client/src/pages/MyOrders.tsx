@@ -1,10 +1,11 @@
-import React, { use, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import type { Order } from '../types';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { dummyDashboardOrdersData, statusColors } from '../assets/assets';
+//import {  statusColors } from '../assets/assets';
+import { dummyDashboardOrdersData } from '../assets/assets';
 import Loading from '../components/Loading';
-import { CalendarIcon, ChevronRightIcon, PackageIcon } from 'lucide-react';
+import { CalendarIcon, PackageIcon } from 'lucide-react';
 
 const MyOrders = () => {
   const currency = import.meta.env.VITE_CURRENCY_SYMBOL || '£';
@@ -12,7 +13,7 @@ const MyOrders = () => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab]= useState('all');
   const [searchParams, setSearchParams] = useSearchParams();
-   const tabs =['Placed', 'all', 'Delivered','Out for Delivery'];
+  // const tabs =['Placed', 'all', 'Delivered','Out for Delivery'];
 
    const {clearCart} = useCart();
 

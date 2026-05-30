@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import type { Product } from '../types';
 import { categoriesData, dummyProducts } from '../assets/assets';
-import {  ChevronDown, Home, SlidersHorizontal, XIcon } from 'lucide-react';
+import {   Home, SlidersHorizontal, XIcon } from 'lucide-react';
 import ProductCard from '../components/Home/ProductCard';
 import Loading from '../components/Loading';
 import FilterPanel from '../components/FilterPanel';
