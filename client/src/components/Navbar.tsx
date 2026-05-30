@@ -2,10 +2,12 @@ import { ArrowUpRightIcon, BikeIcon, ChevronDownIcon, LogOutIcon, MapPinIcon, Me
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+//import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
-    const user: any =  {name : 'Emmanuel Ogbonna', email: '@emmanuel.com', isAdmin: true}  //null;
-
+    const user: any =  {name : 'Onyekachukwu Aniakor', email: 'carlosaniakorchukwu@gmail.com', isAdmin: true}  //null;
+// const {user, logout} = useAuth()
+   // backend integration above
     const {cartCount, setIsCartOpen} =useCart() //{cartCount : 5, setIsCartOpen : (_data : any)=> {}};
 
         const [searchQuery, setSearchQuery] = useState('');
@@ -23,6 +25,7 @@ const Navbar = () => {
         };
 
         const handleLogout = ()=>{
+            logout()
             setUserMenuOpen(false);
             navigate('/');
         }
@@ -97,18 +100,20 @@ const Navbar = () => {
                                     <div className=""  onClick={()=>setUserMenuOpen(false)}>
                                         {!user && <Link className='dropdown-link' to='/login'><UserIcon size={17}/>Sign In</Link>}
                                         {user && <Link className="dropdown-link" to='/orders'><PackageIcon size={17}/>My Orders</Link>}
-                                        {user && <Link className='dropdown-link' to='/addresses'><MapPinIcon size={17}/>Addresses</Link>}
+                                        {/* {user && <Link className='dropdown-link' to='/addresses'><MapPinIcon size={17}/>Addresses</Link>} */}
 
                                         <Link className='md:hidden dropdown-link' to='/products'><ArrowUpRightIcon size={17}/>Products</Link>
                                         <Link className='md:hidden dropdown-link' to='/deals'><ArrowUpRightIcon size={17}/>Deals</Link>
                                         {user?.isAdmin && (
-                                            <Link className='dropdown-link' to='/admin/products'><ShieldIcon className='text-app-orange-dark' size={17}/><span className='text-app-orange-dark'>Admin Panel</span></Link>
+                                          //'/admin/products' to be added in the link below  
+                                            <Link className='dropdown-link' to=''>{/* <ShieldIcon className='text-app-orange-dark' size={17}/><span className='text-app-orange-dark'>Admin Panel</span> */}
+                                            </Link>
                                         )}
                                         {user && (
                                             <div className="border-t border-app-border pt-1">
-                                                <button className='flex items-center gap-3 px-3  py-2 text-app-error hover:bg-red-50 w-full transition-colors' onClick={handleLogout}>
+                                                {/* <button className='flex items-center gap-3 px-3  py-2 text-app-error hover:bg-red-50 w-full transition-colors' onClick={handleLogout}>
                                                     <LogOutIcon className=''  size={17}/>Logout
-                                                </button>
+                                                </button> */}
                                             </div>
                                         ) }
                                     </div>

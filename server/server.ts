@@ -12,15 +12,22 @@ import adminRouter from './routes/adminRoutes.js';
 import deliveryPartnerRouter from './routes/deliveryPartnerRoutes.js';
 
 const app = express();
-const port = process.env.PORT || 5000
+const port = process.env.PORT 
 
 
 //Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "http://localhost:5173",
+    methods : ['GET', 'POST', 'PUT','DELETE'],
+    allowedHeaders:['Content-Type',
+        'Authorisation',
+        'Cache-Control',
+        'Expires',
+         'Pragma'],
+          credentials: true }));
 
 app.get('/', (req:Request, res:Response)=>{
-    res.send('Server is running live now')
+    res.send('Server is running live now!!!')
 });
 
 app.use('/api/auth', authRouter);
@@ -40,5 +47,5 @@ app.use((error:any, req:Request, res: Response, next: NextFunction)=>{
 })
 
 app.listen(port, ()=>{
-    console.log(`server is running at https://localhost:${port}`);
+    console.log(`server is running at http://localhost:${port}`)
 })

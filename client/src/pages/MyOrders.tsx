@@ -41,13 +41,13 @@ const MyOrders = () => {
         <h1 className='text-xl font-semiboldtext-app-green mb-2'>My Orders</h1>
 
         {/* Display tabs */}
-        <div className="flex gap-2 mb-2 overflow-x-auto pb-2">
+        {/* <div className="flex gap-2 mb-2 overflow-x-auto pb-2">
           {tabs.map((tab)=>(
             <button key={tab} onClick={()=> setActiveTab(tab)} className={`px-2 py-1 text-sm font-medium rounded-xl whitespace-nowrap transition-colors ${activeTab === tab ? 'bg-app-green text-white' : 'bg-white text-app-text-light hover:text-app-green'}`}>
               {tab === 'all'? 'All Orders' : tab}
             </button>
           ))}
-        </div>
+        </div> */}
         {/* Display Order List */}
         {loading ? (
           <Loading />
@@ -73,10 +73,10 @@ const MyOrders = () => {
                     </div>
                   </div>
                   {/* Right side */}
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <span className={`px-2 py-1 text-sm font-medium rounded-full ${statusColors[order.status || 'bg-gray-100 text-gray-700']}`}>{order.status} </span>
                     <ChevronRightIcon className='size-4 text-app-text-light ' />
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Item thumbnails */}

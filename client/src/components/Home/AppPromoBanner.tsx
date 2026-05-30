@@ -1,5 +1,6 @@
 import React from 'react'
 import { appPromoBannerData, assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const AppPromoBanner = () => {
   return (
@@ -11,8 +12,11 @@ const AppPromoBanner = () => {
                 <h2 className='font-serif text-2xl sm:text-3xl text-white mb-2'>{appPromoBannerData.title}</h2>
                 <p className='text-white/70 mb-6 max-w-md'>{appPromoBannerData.description}</p>
                 <div className="flex flex-wrap gap-1.5 flex-center  md:justify-start">
-                    <button className='px-4 py-2 bg-white text-green-900 font-semibold rounded-xl hover:bg-orange-100'>App Store</button>
-                    <button className='px-4 py-2 bg-black text-white transition-colors border border-white/10 font-semibold rounded-xl hover:bg-orange-500'>Google Play</button>
+                    <Link to='/products'>
+                    <button className='px-4 py-2 bg-white text-green-900 font-semibold rounded-xl hover:bg-orange-100'>Shop Now</button></Link>
+                    <Link to='/deals'>
+                    <button className='px-4 py-2 bg-black text-white transition-colors border border-white/10 font-semibold rounded-xl hover:bg-orange-500'>
+                    Deals</button></Link>
                 </div>
             </div>
             {/* Right side Image */}

@@ -16,7 +16,7 @@ const Footer = () => {
                     <span className='font-medium text-[22px]'>{footerData.brand.name}</span></Link>
 
                     <p className='text-sm text-white/50 mb-2'>{footerData.brand.description}</p>
-                <div className="flex gap-2">
+                <div className="flex gap-2  ">
                     {footerData.brand.socials.map((social, i)=>(
                         <a href={social.link} key={i} className='size-9 rounded-lg bg-white/30 flex-center  hover:bg-white/50'><social.icon  className='size-5'/></a>
                     ))}

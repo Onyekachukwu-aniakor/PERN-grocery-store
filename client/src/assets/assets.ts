@@ -46,7 +46,7 @@ export const deliveryPartnerLoginImage = "https://images.unsplash.com/photo-1610
 
 export const appPromoBannerData = {
     title: "Get fresh groceries in minutes",
-    description: "Download the Instacart app for exclusive deals, real-time tracking, and the freshest selection delivered right to your door.",
+    description: "Get fresh organic quality farm products delivered to your doorstep. Give us a try today",
 };
 
 export const footerData = {
@@ -67,16 +67,16 @@ export const footerData = {
                 { label: "All Products", to: "/products" },
                 { label: "Flash Deals", to: "/deals" },
                 { label: "Track Order", to: "/orders" },
-                { label: "Delivery Partner", to: "/delivery" },
+               // { label: "Delivery Partner", to: "/delivery" },
             ],
         },
         {
             title: "Customer Service",
             links: [
-                { label: "My Account", to: "#" },
-                { label: "Order History", to: "#" },
-                { label: "Addresses", to: "#" },
-                { label: "Help Center", href: "#" },
+                { label: "My Account", to: "/orders" },
+                { label: "Order History", to: "/orders" },
+                //{ label: "Addresses", to: "#" },
+                //{ label: "Help Center", href: "#" },
             ],
         },
     ],

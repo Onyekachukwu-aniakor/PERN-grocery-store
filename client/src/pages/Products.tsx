@@ -116,7 +116,7 @@ setSearchParams(new URLSearchParams("?tab=1"));*/
                   <SlidersHorizontal className='size-5'/> Filters
                 </button>
                 {/* Sort Products */}
-                <div className="relative">
+                {/* <div className="relative">
                   <select name="" value={sort} onChange={(e)=>updateFilter('sort', e.target.value)}
                     className='appearance-none pl-3 pr-5 py-2 text-sm bg-white rounded-xl border border-app-border focus:border-app-green outline-none cursor-pointer'>
                     <option value="">Newest</option>
@@ -126,7 +126,7 @@ setSearchParams(new URLSearchParams("?tab=1"));*/
                     <option value="name">A - Z</option>
                   </select>
                   <ChevronDown className='absolute pl-3 right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 text-app-text-light pointer-events-none'/>
-                </div>
+                </div> */}
                 
               </div>
             </div>

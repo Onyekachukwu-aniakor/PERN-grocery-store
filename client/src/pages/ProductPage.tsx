@@ -153,7 +153,7 @@ const ProductPage = () => {
         </div>
         </div>
         {/* Customer Review */}
-        {product.reviewCount > 0 && <DummyReviewsSection product={product}/>}
+       {/*  {product.reviewCount > 0 && <DummyReviewsSection product={product}/>} */}
         {/* Related product */}
 
         {relatedProducts.length > 0 && (

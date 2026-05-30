@@ -1,13 +1,13 @@
-import { MailIcon } from 'lucide-react'
+//import { MailIcon } from 'lucide-react'
 import React from 'react'
 
 const Newsletter = () => {
   return (
     <section className='bg-white py-8 px-3 sm:px-5 lg:px-8 rounded-2xl mx-auto shadow-2xs mt-15 mb-10'>
     <div className='max-w-2xl mx-auto text-center'>
-        <div className="size-16 bg-white rounded-xl flex-center mx-auto mb-4 shadow">
+        {/* <div className="size-16 bg-white rounded-xl flex-center mx-auto mb-4 shadow">
             <MailIcon className='size-9 text-app-green' strokeWidth={1.5}/>
-        </div>
+        </div> */}
         <h2 className='text-2xl font-semibold text-app-green mb-2'>Subscribe to our newsletter</h2>
         <p className='text-base leading-relaxed text-app-green-light mb-2'>Get weekly updates on our produce and discount offers here</p>
         <form className='flex flex-col sm:flex-row  max-w-md mx-auto' onSubmit={(e)=>e.preventDefault()}>

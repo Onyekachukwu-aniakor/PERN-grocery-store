@@ -18,7 +18,7 @@ const FilterPanel = ({categories, category, minPrice, maxPrice, updateFilter, cl
             </div>
         </div>
         {/* Price Range */}
-        <div >
+        {/* <div >
             <h3 className="text-sm font-semibold text-app-green mb-2">Price Range</h3>
             <div className="flex items-center gap-2">
                 <input type="number" placeholder='Min' value={minPrice}
@@ -29,7 +29,7 @@ const FilterPanel = ({categories, category, minPrice, maxPrice, updateFilter, cl
                 onChange={(e)=>updateFilter('maxPrice', e.target.value)}
                 className='px-2 py-2 w-full text-sm bg-white rounded-lg border not-focus:border-app-border'/>
             </div>
-        </div>
+        </div> */}
         {hasFilters && (
             <button onClick={clearFilters}
             className='w-full py-2 text-sm text-app-error hover:bg-red-50 rounded-lg transition-colors font-medium  '
