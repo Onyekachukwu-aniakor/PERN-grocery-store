@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, BikeIcon, ChevronDownIcon, LogOutIcon, MapPinIcon, MenuIcon, PackageIcon, SearchIcon, ShieldIcon, ShoppingCartIcon, UserIcon, XIcon } from 'lucide-react';
+import { ArrowUpRightIcon, BikeIcon, ChevronDownIcon,   MenuIcon, PackageIcon, SearchIcon,  ShoppingCartIcon, UserIcon, XIcon } from 'lucide-react';
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';

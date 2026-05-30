@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { appPromoBannerData, assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 

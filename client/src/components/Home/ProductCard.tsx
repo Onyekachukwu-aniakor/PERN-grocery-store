@@ -1,4 +1,4 @@
-import React from 'react'
+
 import type { Product } from '../../types'
 import { useNavigate } from 'react-router-dom';
 import { PlusIcon, StarIcon } from 'lucide-react';

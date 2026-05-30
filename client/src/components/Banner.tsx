@@ -1,4 +1,4 @@
-import { Truck, TruckElectric, TruckElectricIcon, TruckIcon, XIcon, ZapIcon } from 'lucide-react';
+import { Truck,  XIcon, ZapIcon } from 'lucide-react';
 import React, { useState } from 'react'
 
 const Banner = () => {

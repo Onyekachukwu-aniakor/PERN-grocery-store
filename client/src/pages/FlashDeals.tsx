@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import type { Product } from '../types'
 import { dummyProducts } from '../assets/assets';
-import { Loader2Icon, ZapIcon } from 'lucide-react';
+//import { Loader2Icon } from 'lucide-react';
+import {  ZapIcon } from 'lucide-react';
 import Loading from '../components/Loading';
 import ProductCard from '../components/Home/ProductCard';
 

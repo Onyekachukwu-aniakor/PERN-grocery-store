@@ -1,5 +1,5 @@
-import { ChevronRightIcon, MapPinIcon, PlusIcon } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ChevronRightIcon, MapPinIcon } from 'lucide-react';
+//import { Link } from 'react-router-dom';
 
 const CheckoutAddress = ({ user, address, setAddress, setStep }: any) => {
     return (

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useCart } from '../../context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRightIcon, MinusIcon, PlusIcon, ShoppingBagIcon, Trash2Icon, XIcon } from 'lucide-react';
